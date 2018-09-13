@@ -154,6 +154,20 @@ var ReactGrid = function (_React$Component) {
 												_react2.default.createElement(
 														'td',
 														null,
+														'TEst '
+												),
+												_react2.default.createElement(
+														'td',
+														null,
+														'$1070'
+												)
+										),
+										_react2.default.createElement(
+												'tr',
+												null,
+												_react2.default.createElement(
+														'td',
+														null,
 														'February'
 												),
 												_react2.default.createElement(

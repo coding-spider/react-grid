@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-import ReactGrid from 'react-grid';
+import ReactGrid from 'react-grid/build/index';
 
 class App extends Component {
   render() {

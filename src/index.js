@@ -16,6 +16,10 @@ class ReactGrid extends React.Component {
 		      <td>$100</td>
 		    </tr>
 		    <tr>
+		      <td>TEst </td>
+		      <td>$1070</td>
+		    </tr>
+		    <tr>
 		      <td>February</td>
 		      <td>$80</td>
 		    </tr>
