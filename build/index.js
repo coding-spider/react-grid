@@ -81,7 +81,7 @@ module.exports = require("react");
 
 
 Object.defineProperty(exports, "__esModule", {
-  value: true
+		value: true
 });
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -98,30 +98,97 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var Fancy = function (_React$Component) {
-  _inherits(Fancy, _React$Component);
+var ReactGrid = function (_React$Component) {
+		_inherits(ReactGrid, _React$Component);
 
-  function Fancy() {
-    _classCallCheck(this, Fancy);
+		function ReactGrid() {
+				_classCallCheck(this, ReactGrid);
 
-    return _possibleConstructorReturn(this, (Fancy.__proto__ || Object.getPrototypeOf(Fancy)).apply(this, arguments));
-  }
+				return _possibleConstructorReturn(this, (ReactGrid.__proto__ || Object.getPrototypeOf(ReactGrid)).apply(this, arguments));
+		}
 
-  _createClass(Fancy, [{
-    key: 'render',
-    value: function render() {
-      return _react2.default.createElement(
-        'div',
-        null,
-        'This is so Fancy!'
-      );
-    }
-  }]);
+		_createClass(ReactGrid, [{
+				key: 'render',
+				value: function render() {
+						return _react2.default.createElement(
+								'table',
+								null,
+								_react2.default.createElement(
+										'thead',
+										null,
+										_react2.default.createElement(
+												'tr',
+												null,
+												_react2.default.createElement(
+														'th',
+														null,
+														'Month'
+												),
+												_react2.default.createElement(
+														'th',
+														null,
+														'Savings'
+												)
+										)
+								),
+								_react2.default.createElement(
+										'tbody',
+										null,
+										_react2.default.createElement(
+												'tr',
+												null,
+												_react2.default.createElement(
+														'td',
+														null,
+														'January'
+												),
+												_react2.default.createElement(
+														'td',
+														null,
+														'$100'
+												)
+										),
+										_react2.default.createElement(
+												'tr',
+												null,
+												_react2.default.createElement(
+														'td',
+														null,
+														'February'
+												),
+												_react2.default.createElement(
+														'td',
+														null,
+														'$80'
+												)
+										)
+								),
+								_react2.default.createElement(
+										'tfoot',
+										null,
+										_react2.default.createElement(
+												'tr',
+												null,
+												_react2.default.createElement(
+														'td',
+														null,
+														'Sum'
+												),
+												_react2.default.createElement(
+														'td',
+														null,
+														'$180'
+												)
+										)
+								)
+						);
+				}
+		}]);
 
-  return Fancy;
+		return ReactGrid;
 }(_react2.default.Component);
 
-exports.default = Fancy;
+exports.default = ReactGrid;
 
 /***/ })
 /******/ ]);
