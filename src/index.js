@@ -1,35 +1,38 @@
 import "bootstrap/dist/css/bootstrap.css";
+import React, { Component } from "react";
 
 class ReactGrid extends React.Component {
   render() {
     return (
-      <table>
+      <table className="table table-striped table-hover">
         <thead>
           <tr>
-            <th>Month</th>
-            <th>Savings</th>
+            <th scope="col">#</th>
+            <th scope="col">First</th>
+            <th scope="col">Last</th>
+            <th scope="col">Handle</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td>January</td>
-            <td>$100</td>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
           </tr>
           <tr>
-            <td>TEst </td>
-            <td>$1070</td>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
           </tr>
           <tr>
-            <td>February</td>
-            <td>$80</td>
+            <th scope="row">3</th>
+            <td>Larry</td>
+            <td>the Bird</td>
+            <td>@twitter</td>
           </tr>
         </tbody>
-        <tfoot>
-          <tr>
-            <td>Sum</td>
-            <td>$180</td>
-          </tr>
-        </tfoot>
       </table>
     );
   }
