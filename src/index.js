@@ -19,11 +19,12 @@ class ReactGrid extends React.Component {
   }
 
   render() {
+    let self = this;
     return (
       <table className="table table-striped table-hover">
         <thead>
           <tr>
-            {this.state.columns.map(function(c) {
+            {self.state.columns.map(function(c) {
               return (
                 <th key={c.name} scope="col">
                   {c.name}
@@ -33,13 +34,12 @@ class ReactGrid extends React.Component {
           </tr>
         </thead>
         <tbody>
-          {this.state.data.map(function(r) {
+          {self.state.data.map(function(r) {
             return (
               <tr key={r.id}>
-                <th scope="row">2</th>
-                <td>Jacob</td>
-                <td>Thornton</td>
-                <td>@fat</td>
+                {self.state.columns.map(function(c) {
+                  return <td key={c.dataKey}>{r[c.dataKey]}</td>;
+                })}
               </tr>
             );
           })}
