@@ -15,11 +15,15 @@ class App extends Component {
         },
         {
           name: "First Name",
-          dataKey: "first_name"
+          dataKey: "first_name",
+          filter: {
+            placeholder: "Search By Name..."
+          }
         },
         {
           name: "Last Name",
-          dataKey: "last_name"
+          dataKey: "last_name",
+          filter: true
         },
         {
           name: "Email",
@@ -124,7 +128,7 @@ class App extends Component {
           }
         ]
       });
-    }, 2000);
+    }, 500);
   }
 
   componentWillUnmount() {}
